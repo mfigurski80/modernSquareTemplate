@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*Color variables*/
+  --color-primary: #FCA33A;
+  --color-dark: #212121;
+  --color-secondary: #057BAF;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  overflow-x: hidden;
+}
+
+/*Header App*/
+header {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: all 1s;
+}
+.foreground {
+  height: 104.25%;
+  min-width: 110%;
+  margin: -2%;
+  background-color: rgba(255,255,255,0.2);
+  position: absolute;
+  overflow: hidden;
+}
+.tile {
+  background-color: var(--color-dark);
+  float: left;
+  width: 7vw;
+  height: 7vw;
+  border: .5px solid rgba(255,255,255,.1);
+  color: white;
+  display: flex;
+  overflow: hidden;
+}.tile > p {
+  margin: auto;
+  font-size: 75px;
+  font-family: 'Fjalla One', sans-serif;
+}
+@keyframes tileFade {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: .7;}
+}
+.button-tile {
+  background-color: var(--color-dark);
+  border: .5px solid rgba(255,255,255,.1);
+  float: left;
+  width: 7vw;
+  height: 7vw;
+  transition: all .2s;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+} .button-tile > p {
+  margin: auto;
+  font-size: 1.6vw;
+  font-family: 'Fjalla One', sans-serif;
+  color: var(--color-dark);
+  transition: all .2s;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} .background > img {
+  width: 100%;
+  height: auto;
+}
